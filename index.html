@@ -1,7 +1,82 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Valmer w/Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
 <body>
-<h1>Hasdasdasdsadald</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container-fluid" id="header">
+        <h1>Valmer Oy</h1>  
+        <h2>Tervetuloa etsimään sopivia renkaita juuri sinulle.</h2>
+    </div>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Sulje </a>
+  <a href="#">Kesärenkaat<img src="img/bgimg.jpg" class="img-thumbnail" alt="Yksittäiset"></a>
+  <a href="#">Nastarenkaat<img src="img/talvii.jpg" class="img-thumbnail" alt="Yksittäiset"></a>
+  <a href="#">Kitkarenkaat<img src="img/talvi.jpg" class="img-thumbnail" alt="15"></a>
+  <a href="#">Muut</a>
+</div>
+ <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>   
+    
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <div class="row">
+        <div class="col-sm-3">Kesärenkaat
+            <img src="img/bgimg.jpg" class="img-thumbnail" alt="Yksittäiset">
+        </div>
+        <div class="col-sm-3">Nastarenkaat        
+            <img src="img/talvii.jpg" class="img-thumbnail" alt="Yksittäiset">
+        </div>
+        <div class="col-sm-3">Kitkarenkaat      
+            <img src="img/bgimg.jpg" class="img-thumbnail" alt="Yksittäiset">
+        </div>
+        <div class="col-sm-3">
+            Yksittäiset
+            <img src="img/bgimg.jpg" class="img-thumbnail" alt="Yksittäiset">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-2">15
+        
+        </div>
+        <div class="col-sm-2">16
+            
+        </div>
+        <div class="col-sm-2">17
+            
+        </div>
+        <div class="col-sm-2">18
+           
+        </div>
+        <div class="col-sm-2">19
+            
+        </div>
+        <div class="col-sm-2">Muut
+            
+        </div>
+
+    </div>
+    </div>
+
 </body>
 </html>
